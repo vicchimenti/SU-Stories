@@ -47,36 +47,29 @@
           </div>
         </div>
   
-  
+        <t4 type="content" name="Author Name" output="normal" modifiers="striptags,htmlentities" />
+
         <div class="news--detail__body grid-container global-padding--10x">
           <div class="grid-x grid-margin-x">
             <div class="cell medium-8">
               <div class="news--detail__summary text-margin-reset">
                 <p class="intro-text">
-                  <t4 type="content" name="Article Subhead" output="normal" modifiers="striptags,htmlentities" />
-                </p>
+                  <t4 type="content" name="SU Story Description" output="normal" modifiers="striptags,htmlentities" />                </p>
               </div>
               <div class="global-spacing--5x">
                 <div class="wysiwyg">
-                  <t4 type="content" name="Story article" output="normal" modifiers="medialibrary,nav_sections" />
+                  <t4 type="content" name="Full Story" output="normal" modifiers="medialibrary,nav_sections" />
                 </div><!-- /.wysiwyg -->
               </div>
               <div class="news--detail__details global-spacing--3x text-margin-reset">
-                <t4 type="content" name="Author" output="selective-output" process-format="true" format="<p><strong>Written by
-                    <t4 type=&quot;content&quot; name=&quot;Author&quot; output=&quot;normal&quot; modifiers=&quot;striptags,htmlentities&quot; />
+                <t4 type="content" name="Author Name" output="selective-output" process-format="true" format="<p><strong>Posted by
+                    <t4 type=&quot;content&quot; name=&quot;Author Name&quot; output=&quot;normal&quot; modifiers=&quot;striptags,htmlentities&quot; />
                   </strong></p>" />
                 <p>
                   <t4 type="content" name="Publish Date" output="normal" date_format="MMM d, yy" />
                 </p>
               </div>
               <div class="global-spacing--3x">
-                <div class="tags tags__links">
-                  <h2 class="tags__heading show-for-sr">Tags:</h2>
-                  <ul>
-                    <?php tags_list('<t4 type="content" name="News Topics" output="normal" display_field="name" modifiers="htmlentities" delimiter="|" />', '<t4 type="navigation" name="Link to News & Stories" id="991" />', 'newsTopics', '|'); ?>
-                  
-                  </ul>
-                </div>
               </div>
             </div>
             <div class="cell medium-4">
@@ -117,3 +110,17 @@
                   </div
 
    -->
+
+
+   <!-- 
+
+                    <div class="tags tags__links">
+                  <h2 class="tags__heading show-for-sr">Tags:</h2>
+                  <ul>
+                    <?php tags_list('<t4 type="content" name="News Topics" output="normal" display_field="name" modifiers="htmlentities" delimiter="|" />', '<t4 type="navigation" name="Link to News & Stories" id="991" />', 'newsTopics', '|'); ?>
+                  
+                  </ul>
+                </div>
+
+                
+    -->
