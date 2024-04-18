@@ -15,16 +15,13 @@ try {
   
     var list = {};
   
-    list['title'] = processTags('<t4 type="content" name="Title" output="normal" modifiers="striptags,htmlentities" />').replace(/&/gi,'&amp;');
-    list['articleSubhead'] = processTags('<t4 type="content" name="Article Subhead" output="normal" modifiers="striptags,htmlentities" />').replace(/&/gi,'&amp;');
-    list['newsTypes'] = processTags('<t4 type="content" name="News Types" output="normal" display_field="name" delimiter="|" />');
-    list['newsTopics'] = processTags('<t4 type="content" name="News Topics" output="normal" display_field="name" delimiter="|" />');
-    list['author'] = processTags('<t4 type="content" name="Author" output="normal" modifiers="striptags,htmlentities" />').replace(/&/gi,'&amp;');
-    list['schoolsColleges'] = processTags('<t4 type="content" name="Schools & Colleges" output="normal" display_field="name" delimiter="|" />');
+    list['title'] = processTags('<t4 type="content" name="SU Story Title" output="normal" modifiers="striptags,htmlentities" />').replace(/&/gi,'&amp;');
+    list['articleSubhead'] = processTags('<t4 type="content" name="SU Story Description" output="normal" modifiers="striptags,htmlentities" />').replace(/&/gi,'&amp;');
+    list['author'] = processTags('<t4 type="content" name="Author Name" output="normal" modifiers="striptags,htmlentities" />').replace(/&/gi,'&amp;');
     list['publishDate'] = processTags('<t4 type="content" name="Publish Date" output="normal" date_format="yyyy-MM-dd-HH:MM:ss" />');
     list['publishDateText'] = processTags('<t4 type="content" name="Publish Date" output="normal" date_format="MMMM d, yyyy" />');
-    list['image'] = processTags('<t4 type="content" name="Media Library Image" output="normal" formatter="v10/image/pxl-crop" cdn="true" pxl-filter-id="64" />');
-    list['url'] = processTags('<t4 type="content" name="Title" output="fulltext" use-element="true" filename-element="Title" modifiers="striptags,htmlentities" />');
+    list['image'] = processTags('<t4 type="content" name="Story Image" output="normal" formatter="v10/image/pxl-crop" cdn="true" pxl-filter-id="64" />');
+    list['url'] = processTags('<t4 type="content" name="SU Story Title" output="fulltext" use-element="true" filename-element="SU Story Title" modifiers="nav_sections,striptags,htmlentities" />);
     var jsonObj = new org.json.JSONObject(list);
     document.write(jsonObj.toString() + ',');
   
