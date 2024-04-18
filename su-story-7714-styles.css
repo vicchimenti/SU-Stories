@@ -1,18 +1,18 @@
-.story--detail .hero--basic.bg--teal {
+.su-story-detail .hero--basic.bg--teal {
     
     background-color: #005a6d;
 
 }
 
-.bg--teal.bg--gradient {
+.su-story-detail .bg--teal.bg--gradient {
 
     background-image: -webkit-gradient(linear, left top, right bottom, from(#003d49), to(#0C7C94));
     background-image: linear-gradient(to bottom right, #003d49, #0C7C94);
-    
+
 }
 
 
-.amplified--suffix {
+.su-story-detail .amplified--suffix {
 
     line-height: 2.5;
 
