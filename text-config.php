@@ -6,7 +6,7 @@ try {
     $config['source']               = '<t4 type="content" name="JSON File" output="normal" formatter="path/*" />';
     $config['library']              = '<t4 type="content" name="Search Library" output="normal" formatter="path/*" />';
     $config['max-results']          = '<t4 type="content" name="Max Results per Page" output="normal" />';
-   $config['course_compare']       = '<t4 type="content" name="Course Compare Link" output="linkurl" modifiers="nav_sections" />';
+    $config['course_compare']       = '<t4 type="content" name="Course Compare Link" output="linkurl" modifiers="nav_sections" />';
 /*    $config['autocomplete']         = str_replace(rtrim($_SERVER['DOCUMENT_ROOT'], '/'), '', __DIR__) .'/autocomplete.php';
     $config['groupBy']              = 'courseName|courseDepartments';
     */
