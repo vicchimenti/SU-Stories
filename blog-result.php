@@ -16,9 +16,6 @@
                     </div>
                     <div class="global-spacing--2x tags tags__links">
                       <h4 class="tags__heading show-for-sr">Tags:</h4>
-                      <ul>
-                        <?php tags_list($item['newsTopics'], $news_section_url, 'newsTopics', '|'); ?>
-                      </ul>
                     </div>
                   </div>
                 </div>
@@ -56,3 +53,13 @@
     </section>
   </article>
 </div>
+
+
+
+<!-- 
+
+
+                      <ul>
+                      <?php tags_list($item['newsTopics'], $news_section_url, 'newsTopics', '|'); ?>
+                      </ul>
+ -->
