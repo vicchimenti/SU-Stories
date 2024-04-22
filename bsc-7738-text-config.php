@@ -264,23 +264,3 @@ try {
 }
 ?>
 
-
-
-
-
-
-
-
-<!-- 
-
-
-    $queryHandler->setDontRemoveStopwords(array('newsTopics','newsTypes','schoolsColleges'));
-    $queryHandler->setDontTokenize(array('newsTopics','newsTypes','schoolsColleges'));
-
-
-        $substringSearch->setMember('element', 'newsTypes');
-      	$substringSearch->runFilter();
-        $substringSearch->setMember('element', 'newsTopics');
-      	$substringSearch->runFilter();
-
- -->
