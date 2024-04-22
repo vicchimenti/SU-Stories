@@ -82,8 +82,8 @@ try {
 
     $queryHandler = \T4\PHPSearchLibrary\QueryHandlerFactory::getInstance('QueryHandler', $queryString);
     $queryHandler->setStopWords($stopWords);
-    $queryHandler->setDontRemoveStopwords(array('newsTopics','newsTypes','schoolsColleges'));
-    $queryHandler->setDontTokenize(array('newsTopics','newsTypes','schoolsColleges'));
+    $queryHandler->setDontRemoveStopwords(array());
+    $queryHandler->setDontTokenize(array());
     $queryHandler->setIgnoreQueries(array('addCourse', 'removeCourse', 'paginate', 'page'));
     $queryHandler->addCharactersToGenericRegex(array('-','/','&','.','\'','(',')'));
     $queryHandler->stemQuery(array('keywords'));
