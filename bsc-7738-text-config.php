@@ -267,3 +267,18 @@ try {
     $errorAC[] = $e->getMessage();
 }
 ?>
+
+
+
+
+
+
+
+
+<!-- 
+
+
+    $queryHandler->setDontRemoveStopwords(array('newsTopics','newsTypes','schoolsColleges'));
+    $queryHandler->setDontTokenize(array('newsTopics','newsTypes','schoolsColleges'));
+
+ -->
