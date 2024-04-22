@@ -193,7 +193,7 @@ try {
         $frequencySearch->setMember('boost', 2);
         $frequencySearch->setMember('element', 'newsTopics');
         $frequencySearch->runProcessor();
-        $frequencySearch->setMember('boost', 1);
+        $frequencySearch->setMember('boost', 3);
         $frequencySearch->setMember('element', 'articleSubhead');
         $frequencySearch->runProcessor();
 
