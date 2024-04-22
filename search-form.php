@@ -35,18 +35,6 @@ $i = 0;
                     <?php if ($filters !== null) : ?>
                         <ul class="no-bullet">
                             <?php
-                            foreach ($categoryFilters as $key) {
-                                if (isset($filters[$key]) && is_array($filters[$key])) :
-                                    foreach ($filters[$key] as $value) : ?>
-                                        <li class="filter-<?php echo $i++ ?>  small primary" role="button" tabindex="0" data-t4-value="<?php echo strtolower($value) ?>" data-t4-filter="<?php echo $key ?>"><?php echo $value ?><span class="remove"><i class="fa fa-times"></i></span></li>
-                                    <?php
-                                    endforeach;
-                                elseif (isset($filters[$key])) :
-                                    $value = $filters[$key]; ?>
-                                    <li class="filter-<?php echo $i++ ?>  small primary" role="button" tabindex="0" data-t4-value="<?php echo strtolower($value) ?>" data-t4-filter="<?php echo $key ?>"><?php echo $value ?><span class="remove"><i class="fa fa-times"></i></span></li>
-                                <?php
-                                endif;
-                            }
                             foreach ($dateFilters as $key) {
                                 if (isset($filters[$key])) :
                                     $value = $filters[$key]; ?>
@@ -77,7 +65,7 @@ $i = 0;
                 </a>
               </div>
               <?php endif; ?>   
-              <div class="search-count"><p>Showing <strong><?php echo count($results); ?> articles</strong> of <?php echo $totalResults; ?></p></div>
+              <div class="search-count"><p>Showing <strong><?php echo count($results); ?> posts</strong> of <?php echo $totalResults; ?></p></div>
             </div>
         </div>
     </div>
@@ -156,4 +144,18 @@ search filters
         </select>
       </div>
 
+
+
+                                  // foreach ($categoryFilters as $key) {
+                            //     if (isset($filters[$key]) && is_array($filters[$key])) :
+                            //         foreach ($filters[$key] as $value) : ?>
+                            //             <li class="filter-<?php echo $i++ ?>  small primary" role="button" tabindex="0" data-t4-value="<?php echo strtolower($value) ?>" data-t4-filter="<?php echo $key ?>"><?php echo $value ?><span class="remove"><i class="fa fa-times"></i></span></li>
+                            //         <?php
+                            //         endforeach;
+                            //     elseif (isset($filters[$key])) :
+                            //         $value = $filters[$key]; ?>
+                            //         <li class="filter-<?php echo $i++ ?>  small primary" role="button" tabindex="0" data-t4-value="<?php echo strtolower($value) ?>" data-t4-filter="<?php echo $key ?>"><?php echo $value ?><span class="remove"><i class="fa fa-times"></i></span></li>
+                            //     <?php
+                            //     endif;
+                            // }
  -->
