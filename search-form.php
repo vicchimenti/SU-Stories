@@ -2,7 +2,7 @@
 
 $genericFacet = \T4\PHPSearchLibrary\FacetFactory::getInstance('GenericFacet', $documentCollection, $queryHandler);
 $filters = $queryHandler->getQueryValuesForPrint();
-$categoryFilters = array('newsTopics', 'newsTypes', 'schoolsColleges');
+$categoryFilters = array();
 $dateFilters = array();
 $rangeFilters = array();
 
@@ -18,7 +18,7 @@ $i = 0;
     <form>
       <div class="cell initial-12">
         <label for="keywords">Search</label>
-        <input type="text" name="keywords" id="keywords" placeholder="Search All News &amp; Stories&hellip;"
+        <input type="text" name="keywords" id="keywords" placeholder="Search All Stories&hellip;"
                value="<?php echo !empty($query['keywords']) ? $query['keywords']: ''  ?>">
       </div>
       <div class="cell medium-4">
@@ -142,3 +142,12 @@ $i = 0;
 </section>
 
 
+
+
+<!-- 
+
+categoryFilters
+
+'newsTopics', 'newsTypes', 'schoolsColleges'
+
+ -->
