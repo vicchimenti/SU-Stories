@@ -11,7 +11,7 @@ try {
     $config['groupBy']              = 'courseName|courseDepartments';
     */
   
-  	$news_section_url = '<t4 type="navigation" name="Link to News & Stories" id="991" />';
+  	$news_section_url = '<t4 type="navigation" name="Link to Blog Stories" id="1040" />';
   
     mb_http_output('utf-8');
     mb_internal_encoding('utf-8');
