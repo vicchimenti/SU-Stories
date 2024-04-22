@@ -21,65 +21,7 @@ $i = 0;
         <input type="text" name="keywords" id="keywords" placeholder="Search All Stories&hellip;"
                value="<?php echo !empty($query['keywords']) ? $query['keywords']: ''  ?>">
       </div>
-      <div class="cell medium-4">
-        <?php
-        $element = 'newsTopics';
-        $genericFacet->setMember('element', $element);
-        $genericFacet->setMember('type', 'List');
-        $genericFacet->setMember('facetSource', 'documents');
-        $genericFacet->setMember('sortingState', true);
-        $genericFacet->setMember('multipleValueState', true);
-        $genericFacet->setMember('multipleValueSeparator', '|');
-        $search = $genericFacet->displayFacet();
-        ?>
-        <?php if (!empty($search)) : ?>
-          <label for="<?php echo $element; ?>" class="label-text">Filter by Topic</label>
-          <select id="<?php echo $element; ?>" name="<?php echo $element; ?>" data-cookie="T4_persona">
-            <option value="">All Topics</option>
-            <?php foreach ($search as $item) : ?>
-              <option value="<?php echo strtolower($item['value']); ?>" <?php echo $item['selected'] ? 'selected' : '' ?>><?php echo $item['value']; ?></option>
-            <?php endforeach; ?>
-          </select>
-        <?php endif; ?>
-      </div>
-      <div class="cell medium-4">
-        <?php
-        $element = 'newsTypes';
-        $genericFacet->setMember('element', $element);
-        $genericFacet->setMember('type', 'List');
-        $genericFacet->setMember('facetSource', 'documents');
-        $genericFacet->setMember('sortingState', true);
-        $genericFacet->setMember('multipleValueState', true);
-        $genericFacet->setMember('multipleValueSeparator', '|');
-        $search = $genericFacet->displayFacet();
-        ?>
-        <label for="<?php echo $element; ?>" class="label-text">Search by Type</label>
-        <select id="<?php echo $element; ?>" name="<?php echo $element; ?>" data-cookie="T4_persona">
-          <option value="">All Types</option>
-          <?php foreach ($search as $item) : ?>
-              <option value="<?php echo strtolower($item['value']); ?>" <?php echo $item['selected'] ? 'selected' : '' ?>><?php echo $item['value']; ?></option>
-          <?php endforeach; ?>
-        </select>
-      </div>
-      <div class="cell medium-4">
-        <?php
-        $element = 'schoolsColleges';
-        $genericFacet->setMember('element', $element);
-        $genericFacet->setMember('type', 'List');
-        $genericFacet->setMember('facetSource', 'documents');
-        $genericFacet->setMember('sortingState', true);
-        $genericFacet->setMember('multipleValueState', true);
-        $genericFacet->setMember('multipleValueSeparator', '|');
-        $search = $genericFacet->displayFacet();
-        ?>
-        <label for="<?php echo $element; ?>" class="label-text">Search by School or College</label>
-        <select id="<?php echo $element; ?>" name="<?php echo $element; ?>" data-cookie="">
-          <option value="">All Schools & Colleges</option>
-          <?php foreach ($search as $item) : ?>
-              <option value="<?php echo strtolower($item['value']); ?>" <?php echo $item['selected'] ? 'selected' : '' ?>><?php echo $item['value']; ?></option>
-          <?php endforeach; ?>
-        </select>
-      </div>
+      <!--  -->
       <div class="cell initial-12">
         <input type="submit" value="Submit" class="button small primary expand">
       </div>
@@ -149,5 +91,69 @@ $i = 0;
 categoryFilters
 
 'newsTopics', 'newsTypes', 'schoolsColleges'
+
+
+
+search filters
+
+<div class="cell medium-4">
+<?php
+        $element = 'newsTopics';
+        $genericFacet->setMember('element', $element);
+        $genericFacet->setMember('type', 'List');
+        $genericFacet->setMember('facetSource', 'documents');
+        $genericFacet->setMember('sortingState', true);
+        $genericFacet->setMember('multipleValueState', true);
+        $genericFacet->setMember('multipleValueSeparator', '|');
+        $search = $genericFacet->displayFacet();
+        ?>
+        <?php if (!empty($search)) : ?>
+          <label for="<?php echo $element; ?>" class="label-text">Filter by Topic</label>
+          <select id="<?php echo $element; ?>" name="<?php echo $element; ?>" data-cookie="T4_persona">
+            <option value="">All Topics</option>
+            <?php foreach ($search as $item) : ?>
+              <option value="<?php echo strtolower($item['value']); ?>" <?php echo $item['selected'] ? 'selected' : '' ?>><?php echo $item['value']; ?></option>
+            <?php endforeach; ?>
+          </select>
+        <?php endif; ?>
+      </div>
+      <div class="cell medium-4">
+        <?php
+        $element = 'newsTypes';
+        $genericFacet->setMember('element', $element);
+        $genericFacet->setMember('type', 'List');
+        $genericFacet->setMember('facetSource', 'documents');
+        $genericFacet->setMember('sortingState', true);
+        $genericFacet->setMember('multipleValueState', true);
+        $genericFacet->setMemb>
+        </select>
+      </div>
+      <div class="cell medium-4">
+        <?php
+        $element = 'schoolsColleges';
+        $genericFacet->setMember('element', $element);
+        $genericFacet->setMember('type', 'List');
+        $genericFacet->setMember('facetSource', 'documents');
+        $genericFacet->setMember('sortingState', true);
+        $genericFacet->setMember('multipleValueState', true);
+        $genericFacet->setMember('multipleValueSeparator', '|');
+        $search = $genericFacet->displayFacet();
+        ?>
+        <label for="<?php echo $element; ?>" class="label-text">Search by School or College</label>
+        <select id="<?php echo $element; ?>" name="<?php echo $element; ?>" data-cookie="">
+          <option value="">All Schools & Colleges</option>er('multipleValueSeparator', '|');
+        $search = $genericFacet->displayFacet();
+        ?>
+        <label for="<?php echo $element; ?>" class="label-text">Search by Type</label>
+        <select id="<?php echo $element; ?>" name="<?php echo $element; ?>" data-cookie="T4_persona">
+          <option value="">All Types</option>
+          <?php foreach ($search as $item) : ?>
+              <option value="<?php echo strtolower($item['value']); ?>" <?php echo $item['selected'] ? 'selected' : '' ?>><?php echo $item['value']; ?></option>
+          <?php endforeach; ?
+          <?php foreach ($search as $item) : ?>
+              <option value="<?php echo strtolower($item['value']); ?>" <?php echo $item['selected'] ? 'selected' : '' ?>><?php echo $item['value']; ?></option>
+          <?php endforeach; ?>
+        </select>
+      </div>
 
  -->
