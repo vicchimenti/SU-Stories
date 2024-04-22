@@ -105,10 +105,6 @@ try {
         $substringSearch->runFilter();
         $substringSearch->setMember('element', 'author');
         $substringSearch->runFilter();
-      	$substringSearch->setMember('element', 'newsTypes');
-      	$substringSearch->runFilter();
-        $substringSearch->setMember('element', 'newsTopics');
-      	$substringSearch->runFilter();
         $substringSearch->setMember('element', 'articleSubhead');
       	$substringSearch->runFilter();
   
