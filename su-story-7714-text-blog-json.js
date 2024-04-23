@@ -21,7 +21,7 @@ try {
     list['publishDate'] = processTags('<t4 type="content" name="Publish Date" output="normal" date_format="yyyy-MM-dd-HH:MM:ss" />');
     list['publishDateText'] = processTags('<t4 type="content" name="Publish Date" output="normal" date_format="MMMM d, yyyy" />');
     list['image'] = processTags('<t4 type="content" name="Story Image" output="normal" formatter="v10/image/pxl-crop" cdn="true" pxl-filter-id="64" />');
-    list['url'] = processTags('<t4 type="content" name="SU Story Title" output="fulltext" use-element="true" filename-element="SU Story Title" modifiers="nav_sections,striptags,htmlentities" />);
+    list['url'] = processTags('<t4 type="content" name="SU Story Title" output="fulltext" use-element="true" filename-element="SU Story Title" modifiers="striptags,htmlentities" />');
     var jsonObj = new org.json.JSONObject(list);
     document.write(jsonObj.toString() + ',');
   
