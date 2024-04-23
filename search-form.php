@@ -18,8 +18,7 @@ $i = 0;
     <form>
       <div class="cell initial-12">
         <label for="keywords">Search</label>
-        <input type="text" name="keywords" id="keywords" placeholder="Search All Stories&hellip;"
-               value="<?php echo !empty($query['keywords']) ? $query['keywords']: ''  ?>">
+        <input type="text" name="keywords" id="keywords" placeholder="Search All Stories&hellip;" value="<?php echo !empty($query['keywords']) ? $query['keywords']: ''  ?>">
       </div>
       <!--  -->
       <div class="cell initial-12">
@@ -34,7 +33,19 @@ $i = 0;
                     <span>Active filters:</span>
                     <?php if ($filters !== null) : ?>
                         <ul class="no-bullet">
-                            <?php
+                        <?php
+                            foreach ($categoryFilters as $key) {
+                                if (isset($filters[$key]) && is_array($filters[$key])) :
+                                    foreach ($filters[$key] as $value) : ?>
+                                        <li class="filter-<?php echo $i++ ?>  small primary" role="button" tabindex="0" data-t4-value="<?php echo strtolower($value) ?>" data-t4-filter="<?php echo $key ?>"><?php echo $value ?><span class="remove"><i class="fa fa-times"></i></span></li>
+                                    <?php
+                                    endforeach;
+                                elseif (isset($filters[$key])) :
+                                    $value = $filters[$key]; ?>
+                                    <li class="filter-<?php echo $i++ ?>  small primary" role="button" tabindex="0" data-t4-value="<?php echo strtolower($value) ?>" data-t4-filter="<?php echo $key ?>"><?php echo $value ?><span class="remove"><i class="fa fa-times"></i></span></li>
+                                <?php
+                                endif;
+                            }
                             foreach ($dateFilters as $key) {
                                 if (isset($filters[$key])) :
                                     $value = $filters[$key]; ?>
