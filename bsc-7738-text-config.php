@@ -187,12 +187,6 @@ try {
         $frequencySearch->setMember('boost', 4);
         $frequencySearch->setMember('element', 'author');
         $frequencySearch->runProcessor();
-        // $frequencySearch->setMember('boost', 3);
-        // $frequencySearch->setMember('element', 'newsTypes');
-        // $frequencySearch->runProcessor();
-        // $frequencySearch->setMember('boost', 2);
-        // $frequencySearch->setMember('element', 'newsTopics');
-        // $frequencySearch->runProcessor();
         $frequencySearch->setMember('boost', 3);
         $frequencySearch->setMember('element', 'articleSubhead');
         $frequencySearch->runProcessor();
