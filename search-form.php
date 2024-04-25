@@ -5,7 +5,6 @@ $filters = $queryHandler->getQueryValuesForPrint();
 $categoryFilters = array();
 $dateFilters = array();
 $rangeFilters = array();
-
 $i = 0;
 ?>
 <section class="su-listing">
