@@ -53,13 +53,3 @@
     </section>
   </article>
 </div>
-
-
-
-<!-- 
-
-
-                      <ul>
-                      <?php tags_list($item['newsTopics'], $news_section_url, 'newsTopics', '|'); ?>
-                      </ul>
- -->
