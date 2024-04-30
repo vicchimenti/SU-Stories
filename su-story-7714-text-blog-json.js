@@ -16,7 +16,7 @@ try {
   var list = {};
 
   list['title'] = processTags('<t4 type="content" name="SU Story Title" output="normal" modifiers="striptags,htmlentities" />').replace(/&/gi,'&amp;');
-   list['articleTitle'] = processTags('<t4 type="content" name="SU Story Title" output="normal" modifiers="striptags,htmlentities" />').replace(/&/gi,'&amp;');
+  list['articleTitle'] = processTags('<t4 type="content" name="SU Story Title" output="normal" modifiers="striptags,htmlentities" />').replace(/&/gi,'&amp;');
   list['articleSubhead'] = processTags('<t4 type="content" name="SU Story Description" output="normal" modifiers="striptags,htmlentities" />').replace(/&/gi,'&amp;');
   list['author'] = processTags('<t4 type="content" name="Author Name" output="normal" modifiers="striptags,htmlentities" />').replace(/&/gi,'&amp;');
   list['publishDate'] = processTags('<t4 type="content" name="Publish Date" output="normal" date_format="yyyy-MM-dd-HH:MM:ss" />');
