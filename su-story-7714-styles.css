@@ -17,3 +17,13 @@
     line-height: 2.5;
 
 }
+
+
+@media print, screen and (min-width: 64.0625em) {
+
+    .su-story-detail h1 {
+
+        font-size: 4rem;
+    
+    }
+}
