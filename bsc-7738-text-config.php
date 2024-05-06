@@ -167,6 +167,9 @@ try {
         $frequencySearch->setMember('element', 'author');
         $frequencySearch->runProcessor();
         $frequencySearch->setMember('boost', 3);
+        $frequencySearch->setMember('element', 'keywordTags');
+        $frequencySearch->runProcessor();
+        $frequencySearch->setMember('boost', 2);
         $frequencySearch->setMember('element', 'articleSubhead');
         $frequencySearch->runProcessor();
 
