@@ -105,12 +105,15 @@ try {
         $substringSearch->runFilter();
         $substringSearch->setMember('element', 'author');
         $substringSearch->runFilter();
+        $substringSearch->setMember('element', 'keywordTags');
+        $substringSearch->runFilter();
         $substringSearch->setMember('element', 'articleSubhead');
       	$substringSearch->runFilter();
   
         $search->combineResults();
     }
-
+    
+    
     // if ($queryHandler->isQuerySet('newsTopics')) {
     //     $exactSearch->setMember('element', 'newsTopics');
     //     $exactSearch->setMember('query', $params['newsTopics']);
