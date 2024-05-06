@@ -19,6 +19,7 @@ try {
   list['articleTitle'] = processTags('<t4 type="content" name="SU Story Title" output="normal" modifiers="striptags,htmlentities" />').replace(/&/gi,'&amp;');
   list['articleSubhead'] = processTags('<t4 type="content" name="SU Story Description" output="normal" modifiers="striptags,htmlentities" />').replace(/&/gi,'&amp;');
   list['author'] = processTags('<t4 type="content" name="Author Name" output="normal" modifiers="striptags,htmlentities" />').replace(/&/gi,'&amp;');
+  list['keywordTags'] =processTags('<t4 type="content" name="Keyword Tags" output="normal" modifiers="striptags,htmlentities" />').replace(/&/gi,'&amp;').split(', ');
   list['publishDate'] = processTags('<t4 type="content" name="Publish Date" output="normal" date_format="yyyy-MM-dd-HH:MM:ss" />');
   list['publishDateText'] = processTags('<t4 type="content" name="Publish Date" output="normal" date_format="MMMM d, yyyy" />');
   list['image'] = processTags('<t4 type="content" name="Story Image" output="normal" formatter="v10/image/pxl-crop" cdn="true" pxl-filter-id="64" />');
