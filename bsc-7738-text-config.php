@@ -112,31 +112,7 @@ try {
   
         $search->combineResults();
     }
-    
-    
-    // if ($queryHandler->isQuerySet('newsTopics')) {
-    //     $exactSearch->setMember('element', 'newsTopics');
-    //     $exactSearch->setMember('query', $params['newsTopics']);
-    //     $exactSearch->setMember('multipleValueState', true);
-    //     $exactSearch->setMember('multipleValueSeparator', '|');
-    //     $exactSearch->runFilter();
-    // }
 
-    // if ($queryHandler->isQuerySet('newsTypes')) {
-    //     $exactSearch->setMember('element', 'newsTypes');
-    //     $exactSearch->setMember('query', $queryHandler->getQueryValue('newsTypes'));
-    //     $exactSearch->setMember('multipleValueState', true);
-    //     $exactSearch->setMember('multipleValueSeparator', '|');
-    //     $exactSearch->runFilter();
-    // }
-
-    // if ($queryHandler->isQuerySet('schoolsColleges')) {
-    //     $exactSearch->setMember('element', 'schoolsColleges');
-    //     $exactSearch->setMember('query', $queryHandler->getQueryValue('schoolsColleges'));
-    //     $exactSearch->setMember('multipleValueState', true);
-    //     $exactSearch->setMember('multipleValueSeparator', '|');
-    //     $exactSearch->runFilter();
-    // }
 
     // Get the intersection of multiple result sets if necessary
     $search->intersectDocumentResults();
