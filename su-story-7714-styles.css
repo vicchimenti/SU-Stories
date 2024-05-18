@@ -19,6 +19,12 @@
 }
 
 
+.su-story-detail .large-3 .global-margin--3x {
+    margin-top: 0;
+    margin-top: 0;
+}
+
+
 @media print, screen and (min-width: 64.0625em) {
 
     .su-story-detail h1 {
@@ -26,4 +32,11 @@
         font-size: 4rem;
     
     }
+
+    .su-story-detail p {
+
+        font-size: 0.9375rem;
+
+    }
 }
+
