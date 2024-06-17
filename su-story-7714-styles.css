@@ -51,8 +51,17 @@
     .su-story-detail .hero--basic {
 
         padding-bottom: 2rem;
-        
+
     }
 
+}
+
+@media print, screen and (min-width: 48.0625em) {
+
+    .su-story-detail .hero--basic {
+
+        padding-bottom: 4rem;
+
+    }
 }
 
