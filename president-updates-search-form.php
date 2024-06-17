@@ -17,7 +17,7 @@ $i = 0;
     <form>
       <div class="cell initial-12">
         <label for="keywords">Search</label>
-        <input type="text" name="keywords" id="keywords" placeholder="Search All Stories&hellip;" value="<?php echo !empty($query['keywords']) ? $query['keywords']: ''  ?>">
+        <input type="text" name="keywords" id="keywords" placeholder="Search All Updates&hellip;" value="<?php echo !empty($query['keywords']) ? $query['keywords']: ''  ?>">
       </div>
       <!--  -->
       <div class="cell initial-12">
