@@ -65,8 +65,8 @@
 
     .su-story-detail .bg--teal.bg--gradient {
 
-        background-image: -webkit-gradient(linear, left top, right bottom, from(#A9A9A9), to(#808080))!important;
-        background-image: linear-gradient(to bottom right, #A9A9A9, #808080)!important;
+        background-image: -webkit-gradient(linear, left top, right bottom, from(#808080), to(#A9A9A9))!important;
+        background-image: linear-gradient(to bottom right, #808080, #A9A9A9)!important;
 
     }
 
