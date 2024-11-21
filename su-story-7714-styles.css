@@ -1,13 +1,13 @@
 .su-story-detail .hero--basic.bg--teal {
     
-    background-color: #808080;
+    background-color: #808080!important;
 
 }
 
 .su-story-detail .bg--teal.bg--gradient {
 
-    background-image: -webkit-gradient(linear, left top, right bottom, from(#808080), to(#A9A9A9));
-    background-image: linear-gradient(to bottom right, #808080, #A9A9A9);
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#808080), to(#A9A9A9))!important;
+    background-image: linear-gradient(to bottom right, #808080, #A9A9A9)!important;
 
 }
 
