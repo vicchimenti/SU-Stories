@@ -11,7 +11,7 @@ $i = 0;
     <div id="searchoptionsGeneric" role="search" class="su-listing--form-wrapper bg--dark global-padding--8x" data-t4-ajax-group="courseSearch">
 
     <div class="grid-container">
-      <h2 class="h3">Stories our Redhawks Abroad</h2>
+      <h2 class="h3">Our Stories</h2>
     </div>
 
     <form>
